@@ -21,7 +21,7 @@ def set_seed(seed=SEED):
 # =============================
 # Device Configuration
 # =============================
-DEVICE = torch.device("cpu")  # Change to "cuda" if GPU available
+DEVICE = torch.device("cpu")
 
 # =============================
 # Model Configuration
