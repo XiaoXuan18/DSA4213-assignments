@@ -77,7 +77,7 @@ def tokenize_datasets(train_dataset, val_dataset, test_dataset, model_name=confi
         tokens["labels"] = batch["label"]
         return tokens
     
-    # Apply tokenization
+    # Apply tokenisation
     train_tokenized = train_dataset.map(preprocess, batched=True)
     val_tokenized = val_dataset.map(preprocess, batched=True)
     test_tokenized = test_dataset.map(preprocess, batched=True)
@@ -93,6 +93,7 @@ def tokenize_datasets(train_dataset, val_dataset, test_dataset, model_name=confi
     return train_tokenized, val_tokenized, test_tokenized, tokenizer
 
 def create_subset(train_dataset_tokenised, subset_ratio=config.SUBSET_RATIO, seed=config.SEED):
+    # For creativity experiment
     """Create stratified subset of training data"""
     print(f"\nCreating {subset_ratio*100}% subset...")
     
