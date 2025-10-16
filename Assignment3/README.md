@@ -1,5 +1,5 @@
 # To use this code:
-1. Create a new folder for your project
+1. Create a new folder
 2. Copy all 9 Python files into that folder
 3. Run in your terminal: python main.py
 
